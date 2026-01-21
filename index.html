@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Profesional</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Lista de Tareas</h1>
+
+    <!-- Botón Modo Oscuro -->
+    <div class="dark-mode-toggle">
+      <button id="darkModeBtn">Modo Oscuro</button>
+    </div>
+
+    <!-- Input y agregar -->
+    <div class="input-container">
+      <input type="text" id="taskInput" placeholder="Escribe una nueva tarea">
+      <button id="addTaskBtn">Agregar</button>
+    </div>
+
+    <!-- Filtros -->
+    <div class="filters">
+      <button data-filter="all" class="filter-btn active">Todas</button>
+      <button data-filter="pending" class="filter-btn">Pendientes</button>
+      <button data-filter="completed" class="filter-btn">Completadas</button>
+    </div>
+
+    <!-- Lista de tareas -->
+    <ul id="taskList"></ul>
+
+    <!-- Contador -->
+    <div class="counter">
+      <span id="totalTasks">Total: 0</span> | 
+      <span id="pendingTasks">Pendientes: 0</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
